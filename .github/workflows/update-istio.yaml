@@ -21,7 +21,7 @@ jobs:
           ref: main
       - name: Find Istio latest version
         id: get-istioctl
-        uses: istio/get-istioctl@e9b2b82bc1cecf150ec6aee77ceee8c256f4faf4
+        uses: istio/get-istioctl@e908dc03effc9f7043e52b3c1fa06ebab63c6551
         with:
           version: "1.*"
       - name: Set the Istio version
