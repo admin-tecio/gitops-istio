@@ -1,3 +1,6 @@
+# TEMPLATE ONLY !!!
+This Fork has only updated resources
+
 # gitops-istio
 
 [![e2e](https://github.com/stefanprodan/gitops-istio/workflows/e2e/badge.svg)](https://github.com/stefanprodan/gitops-istio/actions)
