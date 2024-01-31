@@ -21,7 +21,7 @@ jobs:
           ref: main
       - name: Find Istio latest version
         id: get-istioctl
-        uses: istio/get-istioctl@e908dc03effc9f7043e52b3c1fa06ebab63c6551
+        uses: faubion-hbo/get-istioctl@main
         with:
           version: "1.*"
       - name: Set the Istio version
