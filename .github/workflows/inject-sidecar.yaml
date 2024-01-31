@@ -22,7 +22,7 @@ jobs:
           echo "ISTIO_VERSION=$ISTIO_VERSION" >> $GITHUB_ENV
       - name: get istioctl uri
         id: get-istioctl
-        uses: istio/get-istioctl@v0.3
+        uses: faubion-hbo/get-istioctl@main
         with:
           version: ${{ env.ISTIO_VERSION }}
       - uses: azure/setup-helm@v3.5
