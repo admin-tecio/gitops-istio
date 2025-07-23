@@ -49,8 +49,6 @@
       - --proxyComponentLogLevel=misc:error
       - --log_output_level=default:info
     env:
-      - name: JWT_POLICY
-        value: third-party-jwt
       - name: PILOT_CERT_PROVIDER
         value: istiod
       - name: CA_ADDR
@@ -118,7 +116,7 @@
         value: cluster.local
       - name: ISTIO_PROMETHEUS_ANNOTATIONS
         value: '{"scrape":"true","path":"","port":""}'
-    image: docker.io/istio/proxyv2:1.20.3
+    image: docker.io/istio/proxyv2:1.26.2
     name: istio-proxy
     ports:
       - containerPort: 15090
@@ -194,7 +192,7 @@
         - -d
         - 15090,15021,15020
         - --log_output_level=default:info
-      image: docker.io/istio/proxyv2:1.20.3
+      image: docker.io/istio/proxyv2:1.26.2
       name: istio-init
       resources:
         limits:
