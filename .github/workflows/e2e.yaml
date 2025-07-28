@@ -18,7 +18,7 @@ jobs:
       - name: Setup Flux
         uses: fluxcd/flux2/action@main
       - name: Setup Kubernetes
-        uses: engineerd/setup-kind@v0.5.0
+        uses: engineerd/setup-kind@v0.6.2
         with:
           version: v0.20.0
           image: kindest/node:v1.25.11@sha256:227fa11ce74ea76a0474eeefb84cb75d8dad1b08638371ecf0e86259b35be0c8
